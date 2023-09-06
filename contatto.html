@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<html>
+    <body> 
+    <form id="login-form" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br>
+        
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        
+      
+        
+        <span class="password-toggle">
+          <button type="button" onclick="ShowPassword()">
+            <i class="fa fa-eye"></i>
+          </button>
+        </span>
+    </body>
+        
+        <script>
+          function ShowPassword() {
+            var passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password") {
+              passwordInput.type = "text";
+            } else {
+              passwordInput.type = "password";
+              passwordInput.classList.add("animate");
+
+  // Wait for the animation to finish
+             setTimeout(() => {
+                passwordInput.classList.remove("animate");
+              }, 500);
+            }
+                        }
+        </script>
+        
+        <input type="submit" value="Login">
+      </form>
+      <style>
+        @keyframes example {
+  0% {
+    transform: rotate(0.5turn);
+  }
+  50% {
+    transform: rotate(1.1turn);
+  }
+  100% {
+    transform: rotate(1.5turn);
+  }
+}
+
+.animate {
+  animation: example 0.5s ease-in-out both;
+}
+        .password-toggle button {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+      
+        .password-toggle button:hover {
+          background-color: #45a049;
+        }
+       /* Cambia il colore del pulsante */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Cambia il testo del pulsante */
+input[type="submit"]::before {
+  content: "Log In";
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Cambia l'apparenza del pulsante quando è attivato */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+      </style>
+</html>

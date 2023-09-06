@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<title> Alessandro's </title>
+<link rel="stylesheet" type="text/css" href="prova.css">
+<!-- Collega il foglio di stile di FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="prova.js"></script>
+<div id="header">
+<head> </head>
+<nav id='menu'>
+    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'>
+    <ul>
+      <li><a href='index.html'>Home</a></li>
+      <li><a class='dropdown-arrow' href='contatto.html'>Contatti</a>
+      </li>
+    </ul>
+  </nav> 
+</div>
+<body id="main-content">
+  <!-- FORM PER CONTATTI -->
+<form action="" method="post" class="contact">
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+  <input type="password" id="MyInput" name="password" required placeholder="Password">
+  <input type="checkbox" id="show-password" onclick="togglePasswordVisibility()"> Mostra Password
+  <label for="messaggio">Messaggio:</label><br>
+  <textarea id="messaggio" name="messaggio" rows="4" required></textarea><br><br>
+
+ <input type="submit" value="Invia"> 
+</form>
+      <!-- FINE FORM -->
+<div id="footer">
+  <i class="fas fa-phone icon-small"></i> 
+  <span> +39 339-181-1177 </span>
+  <a href="https://www.instagram.com/aledam_12/?next=%2F" target="_blank"> <i class="fab fa-instagram icon-small"></i> </a>
+  <a href="URL-del-tuo-profilo-LinkedIn" target="_blank">
+    <i class="fab fa-linkedin icon-small"></i>
+</a>
+</div>
+</body>
