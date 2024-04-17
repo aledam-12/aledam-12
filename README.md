@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @aledam-12
-- 👀 I’m interested in Cybersecurity and frontend web developing 
+- 👀 I’m interested in Cybersecurity
 - 🌱 I’m currently learning Computer Science 
 - 📫 How to reach me: Instagram: aledam_12  Email: alessandrodambrosio1212@gmail.com 
 
